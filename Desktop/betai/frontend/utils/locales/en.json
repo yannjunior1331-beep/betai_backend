@@ -1,0 +1,646 @@
+{
+  "common": {
+    "loading": "Loading...",
+    "error": "Error",
+    "success": "Success",
+    "cancel": "Cancel",
+    "save": "Save",
+    "delete": "Delete",
+    "confirm": "Confirm",
+    "back": "Back",
+    "next": "Next",
+    "close": "Close",
+    "yes": "Yes",
+    "no": "No",
+    "ok": "OK"
+  },
+  "faqSection": {
+  "title": "Frequently Asked Questions",
+  "questions": [
+    "How do coins work?",
+    "Can I cancel my subscription?",
+    "What payment methods are accepted?",
+    "How do I get support?"
+  ],
+  "answers": {
+    "0": "Coins are our virtual currency used to generate AI-powered betslips (coupons). Each betslip generation costs 100 coins. When you purchase coin packages, you get a specific number of coins that can be used for generating predictions.",
+    "1": "Yes! You can cancel your subscription at any time. For subscriptions, simply go to your profile settings and select 'Cancel Subscription'. Your access will continue until the end of your current billing period. No hidden fees or questions asked.",
+    "2": "We accept various payment methods depending on your country. For African countries, we support mobile money (MTN, Orange, Airtel), bank transfers, and credit/debit cards. The specific available methods will be shown during checkout based on your selected country.",
+    "3": "For any questions or support needs, please contact us at freecoder21@gmail.com. Our support team is available 24/7 to assist you with payment issues, technical problems, or any other inquiries you may have."
+  }
+},
+  "paywall": {
+    "loading": "Loading paywall...",
+    "authRequired": {
+      "title": "Authentication Required",
+      "message": "Please login to access premium features.",
+      "viewMessage": "Please login to access premium features",
+      "login": "Login",
+      "loginNow": "Login Now"
+    },
+    "header": {
+      "title": "Upgrade to Premium",
+      "subtitle": "Unlock AI-powered predictions and exclusive features",
+      "coins": "{{count}} coins"
+    },
+    "countrySelector": {
+      "label": "Payment Country",
+      "select": "Select Country",
+      "currency": "Currency: {{currency}}"
+    },
+    "countrySelection": {
+      "title": "Select Your Country",
+      "subtitle": "Choose your country for payment processing",
+      "footer": "Payment gateway will be automatically selected based on your country"
+    },
+    "promoInfo": {
+      "registeredWith": "You registered with promo code:",
+      "discountAvailable": "10% OFF Available"
+    },
+    "promoBanner": {
+      "title": "Promo Code Discount!",
+      "subtitle": "You get 10% off on your first subscription"
+    },
+    "tabs": {
+      "coins": "Coin Packages",
+      "subscriptions": "Subscriptions"
+    },
+    "plansSection": {
+      "coinsTitle": "Choose Your Coin Package",
+      "subscriptionsTitle": "Unlimited Access Plans"
+    },
+    "planActions": {
+      "selected": "Selected",
+      "selectPlan": "Select Plan"
+    },
+    "discountBadge": "{{percentage}}% OFF",
+    "saveBadge": "Save {{percentage}}%",
+    "validFor": "Valid for {{duration}}",
+    "discountIndicator": "{{percentage}}% OFF",
+    "tags": {
+      "popular": "POPULAR",
+      "bestValue": "BEST VALUE",
+      "unlimited": "UNLIMITED",
+      "premium": "PREMIUM"
+    },
+    "planDetails": {
+      "coins": "coins",
+      "coins_500": {
+        "name": "500 Coins",
+        "duration": "24 hours",
+        "utilization": "24-hour access",
+        "features": [
+          "Unlimited access to homepage predictions for 24hrs",
+          "Best possible outputs for your preferred events",
+          "AI-based predictions",
+          "Generate multiple betslips"
+        ]
+      },
+      "coins_1200": {
+        "name": "1200 Coins",
+        "duration": "3 days",
+        "utilization": "3-day access",
+        "features": [
+          "Unlimited access to homepage predictions for 3 days",
+          "Best possible outputs for your preferred events",
+          "AI-based predictions",
+          "Generate more betslips"
+        ]
+      },
+      "weekly_unlimited": {
+        "name": "Weekly Unlimited",
+        "duration": "7 days",
+        "utilization": "Unlimited",
+        "features": [
+          "Unlimited access to homepage predictions",
+          "Best possible outputs for your preferred events",
+          "AI-based predictions",
+          "Unlimited access to trained AI for 7 days",
+          "Priority support"
+        ]
+      },
+      "monthly_unlimited": {
+        "name": "Monthly Unlimited",
+        "duration": "30 days",
+        "utilization": "Unlimited",
+        "features": [
+          "Unlimited access to homepage predictions",
+          "Best possible outputs for your preferred events",
+          "AI-based predictions",
+          "Unlimited access to trained AI",
+          "Priority support",
+          "Advanced analytics",
+          "Exclusive features"
+        ]
+      }
+    },
+    "confirmPurchase": {
+      "title": "Confirm Purchase",
+      "message1": "You're about to purchase:\n\n{{planName}}\nPrice: {{price}}\nDuration: {{duration}}\n\n",
+      "promoDiscount": "🎉 You're getting 10% off with your promo code!\n\n",
+      "message2": "Selected Country: {{countryName}} ({{countryCode}})\nPayment gateway will be automatically selected based on your country.",
+      "proceed": "Proceed to Payment"
+    },
+    "payment": {
+      "gateways": {
+        "fapshi": "Fapshi",
+        "lygos": "Lygos"
+      },
+      "redirecting": {
+        "title": "Redirecting to Payment",
+        "message": "You will now be redirected to {{gateway}} to complete your payment."
+      },
+      "errors": {
+        "createFailed": "Failed to create payment",
+        "linkError": {
+          "title": "Payment Link Error",
+          "message": "Cannot open payment link. Please try again."
+        },
+        "failed": {
+          "title": "Payment Failed",
+          "message": "There was an error processing your payment. Please try again."
+        },
+        "timeout": {
+          "title": "Payment Timeout",
+          "message": "Payment is taking longer than expected. Please check your email or contact support."
+        }
+      },
+      "success": {
+        "title": "Payment Successful! 🎉",
+        "message": "You've successfully purchased {{planName}}!\n\n{{coins}}{{duration}}\n\n{{promoApplied}}",
+        "promoApplied": "Your 10% promo code discount has been applied!",
+        "continue": "Continue",
+        "refreshMessage": "Payment was successful! Please refresh the app to see your updated subscription."
+      }
+    },
+    "paymentStatus": {
+      "pending": {
+        "title": "Payment in Progress",
+        "message": "Please complete the payment in the opened browser window. We'll notify you when it's done."
+      },
+      "success": {
+        "title": "Payment Successful",
+        "message": "Your subscription has been activated successfully!"
+      },
+      "failed": {
+        "title": "Payment Failed",
+        "message": "There was an issue with your payment. Please try again."
+      },
+      "transaction": "Transaction: {{id}}"
+    },
+    "featuresSection": {
+      "title": "Premium Features"
+    },
+    "features": {
+      "aiPredictions": {
+        "title": "AI Predictions",
+        "description": "Advanced artificial intelligence for accurate match predictions"
+      },
+      "highAccuracy": {
+        "title": "High Accuracy",
+        "description": "Proven success rates with data-driven insights"
+      },
+      "unlimitedAccess": {
+        "title": "Unlimited Access",
+        "description": "Generate as many betslips as you need"
+      },
+      "safeSecure": {
+        "title": "Safe & Secure",
+        "description": "Encrypted payments and data protection"
+      }
+    },
+    "paymentInfo": {
+      "securePayment": {
+        "title": "Secure Payment",
+        "description": "All payments are processed securely through our payment partners. Your payment information is encrypted and never stored."
+      },
+      "easyCancellation": {
+        "title": "Easy Cancellation",
+        "description": "Cancel your subscription anytime. No questions asked."
+      }
+    },
+    "faqSection": {
+      "title": "Frequently Asked Questions",
+      "questions": [
+        "How do coins work?",
+        "Can I cancel my subscription?",
+        "What payment methods are accepted?",
+        "How do I get support?"
+      ]
+    },
+    "footer": {
+      "agreement": "By continuing, you agree to our Terms of Service and Privacy Policy.",
+      "copyright": "© 2025 FootGpt. All rights reserved."
+    }
+  },
+  "betslip": {
+    "title": "Betslips Generator",
+    "subtitle": "Enter target odd to generate AI-powered betslips",
+    "targetOdd": "Target Odd",
+    "targetOddPlaceholder": "e.g., 5.00 (max: 10.00)",
+    "oddLimitWarning": "⚠️ Target odd cannot exceed 10.00",
+    "clear": "Clear",
+    "generate": "Generate",
+    "generating": "Generating...",
+    "generatedBetslips": "Generated Betslips",
+    "noBetslipsYet": "No Betslips Yet",
+    "noBetslipsDescription": "Enter a target odd and click \"Generate\" to get AI-powered betslip suggestions",
+    "aiAnalyzing": "AI is analyzing fixtures...",
+    "mayTakeTime": "This may take 10-20 seconds",
+    "loginRequired": "Login Required",
+    "loginToGenerate": "Login to generate AI-powered betslips",
+    "needCredits": "Need More Credits",
+    "creditsNeeded": "You need {{credits}} credit{{plural}} to generate AI-powered betslips.",
+    "youHaveCredits": "You have {{count}} credit{{plural}} remaining.",
+    "goToLogin": "Go to Login",
+    "getCredits": "Get Credits",
+    "loginToSave": "Login to save",
+    "authStatus": {
+      "loginToGenerate": "Login to generate",
+      "adminUnlimited": "Admin (Unlimited)",
+      "proUnlimited": "Pro (Unlimited)",
+      "credits": "Credits: {{count}}",
+      "needCredits": "Credits: {{count}} (Need {{required}})"
+    },
+    "tips": {
+      "title": "💡 Tips:",
+      "targetOdds": "• Try target odds between 2.00 and 10.00",
+      "maxOdd": "• Maximum allowed target odd: 10.00",
+      "aiConfidence": "• Each betslip shows AI confidence score",
+      "successRate": "• Success rate based on confidence & selections",
+      "proSubscription": "✅ Pro subscription: Unlimited generations",
+      "creditsNeeded": "Credits needed: {{credits}} per generation",
+      "loginToGenerate": "Login to generate betslips"
+    },
+    "connectionError": {
+      "title": "Connection Error",
+      "message": "Cannot connect to the server. Please check:\\n\\n1. Your backend is running (node server.js)\\n2. Server is on {{ip}}\\n3. No firewall blocking the connection"
+    },
+    "errors": {
+      "invalidInput": "Invalid Input",
+      "invalidOdd": "Please enter a valid target odd (minimum 1.10)",
+      "oddTooHigh": "Target odd cannot exceed 10.00",
+      "generationFailed": "Generation Failed",
+      "generationError": "Failed to generate betslips",
+      "noBetslips": "No Betslips Generated",
+      "noBetslipsMessage": "No betslips could be generated with the current fixtures and target odd."
+    },
+    "betslipCard": {
+      "betslip": "Betslip",
+      "totalOdds": "Total Odds",
+      "potentialWin": "Potential Win",
+      "aiConfidence": "AI Confidence",
+      "successRate": "Success Rate",
+      "stake": "Stake",
+      "selections": "selections",
+      "selection": "selection",
+      "useThisBetslip": "Use This Betslip",
+      "saveToProfile": "Save to Profile",
+      "saved": "Saved!",
+      "loginToSave": "Login to Save"
+    },
+    "selections": {
+      "league": "League",
+      "prediction": "Prediction",
+      "odd": "Odd",
+      "confidence": "Confidence",
+      "matchTime": "Match Time",
+      "status": "Status",
+      "aiGenerated": "🤖 AI Generated",
+      "manual": "📝 Manual",
+      "upcoming": "UPCOMING",
+      "live": "LIVE",
+      "finished": "FINISHED"
+    },
+     "card": {
+      "title": "AI Betslip #{id}",
+      "match": "match",
+      "matches": "matches",
+      "prediction": "Prediction",
+      "odd": "Odd",
+      "ai": "AI",
+      "totalOdd": "Total Odd",
+      "aiConfidence": "AI Confidence",
+      "successRate": "Success Rate",
+      "stake": "Stake",
+      "potentialReturn": "Potential Return",
+      "viewDetails": "View Details",
+      "hideDetails": "Hide Details",
+      "showLess": "Show Less",
+      "showMore": "+{{count}} more matches",
+      "saveToProfile": "Save to Profile",
+      "savedSuccess": "Betslip saved to your profile.",
+      "saveError": "Failed to save betslip. Please try again.",
+      "noPrediction": "No prediction",
+      "predictions": {
+        "over": "Over {value}",
+        "under": "Under {value}",
+        "btts": "BTTS {value}",
+        "homeWin": "Home Win",
+        "awayWin": "Away Win",
+        "draw": "Draw",
+        "oneXTwo": "1X2: {value}",
+        "doubleChance": "Double Chance: {value}"
+      }
+    }
+  },
+  "profile": {
+    "profile": "Profile",
+    "success": "Success",
+    "accuracy": "Accuracy",
+    "totalBetslips": "Total Betslips",
+    "subscription": "Subscription",
+    "credits": "Credits",
+    "createNewBetslip": "Create New Betslip",
+    "generateAiPowered": "Generate AI-powered betslips",
+    "savedBetslips": "Saved Betslips",
+    "seeAll": "See All",
+    "noSavedBetslips": "No Saved Betslips",
+    "createFirstOne": "Your saved betslips will appear here. Create your first one!",
+    "createBetslip": "Create Betslip",
+    "account": "Account",
+    "language": "Language",
+    "buyCoins": "Buy Coins",
+    "getCoins": "GET COINS",
+    "becomeAffiliate": "Become Affiliate",
+    "affiliateProgram": "Affiliate Program",
+    "active": "ACTIVE",
+    "earn": "EARN",
+    "notifications": "Notifications",
+    "supportLegal": "Support & Legal",
+    "helpSupport": "Help & Support",
+    "termsConditions": "Terms & Conditions",
+    "privacyPolicy": "Privacy Policy",
+    "aboutBetai": "About BetAI",
+    "logout": "Logout",
+    "logoutConfirm": "Are you sure you want to logout?",
+    "logoutBtn": "Logout",
+    "authenticationRequired": "Authentication Required",
+    "pleaseLogin": "Please login to access your profile.",
+    "loginNow": "Login Now",
+    "loadingProfile": "Loading profile...",
+    "pleaseLoginView": "Please login to view your profile",
+    "version": "BetAI Assistant v1.0.0",
+    "copyright": "© 2024 BetAI. All rights reserved.",
+    "noSavedBetslipsAlert": "No Saved Betslips",
+    "noSavedBetslipsMessage": "You haven't saved any betslips yet.",
+    "removeBetslip": "Remove Betslip",
+    "removeBetslipConfirm": "Are you sure you want to remove this betslip?",
+    "remove": "Remove",
+    "successRemoved": "Success",
+    "betslipRemoved": "Betslip removed!",
+    "comingSoon": "Coming Soon",
+    "willBeAvailable": "will be available soon!",
+    "languageChanged": "Language Changed",
+    "languageSetTo": "Language set to",
+    "aiConfidence": "AI Confidence",
+    "successRate": "Success Rate",
+    "stake": "Stake",
+    "potentialReturn": "Potential Return",
+    "selectionsInBetslip": "Selections in this betslip:",
+    "prediction": "Prediction:",
+    "deleteThisBetslip": "Delete This Betslip",
+    "matches": "matches",
+    "match": "match",
+    "league": "League",
+    "status": "Status",
+    "aiGenerated": "🤖 AI Generated",
+    "manual": "📝 Manual",
+    "totalOdds": "Total Odds",
+    "recently": "Recently",
+    "home": "Home",
+    "away": "Away",
+    "unknownLeague": "Unknown League",
+    "noPrediction": "No prediction",
+    "none": "None",
+    "daily": "Daily",
+    "weekly": "Weekly",
+    "monthly": "Monthly",
+    "pro": "Pro"
+  },
+  "affiliate": {
+    "dashboard": "Affiliate Dashboard",
+    "notAnAffiliate": "Not an Affiliate",
+    "notAffiliateText": "You need to join the affiliate program to access this dashboard.",
+    "becomeAnAffiliate": "Become an Affiliate",
+    "tier": "TIER",
+    "basic": "BASIC",
+    "premium": "PREMIUM",
+    "elite": "ELITE",
+    "commissionRate": "Commission Rate: {{rate}}",
+    "earnings": "Earnings",
+    "today": "Today",
+    "week": "This Week",
+    "month": "This Month",
+    "total": "Total",
+    "todayEarnings": "Today's Earnings",
+    "thisWeekEarnings": "This Week's Earnings",
+    "thisMonthEarnings": "This Month's Earnings",
+    "totalEarnings": "Total Earnings",
+    "totalReferrals": "Total Referrals",
+    "conversionRate": "Conversion Rate",
+    "availableForPayout": "Available for Payout",
+    "lifetimeCommissionEarned": "Lifetime commission earned",
+    "min": "Min: {{amount}}",
+    "requestCashout": "Request Cashout",
+    "nextPayoutDate": "Next payout date: {{date}}",
+    "notScheduled": "Not scheduled",
+    "yourPromoCode": "Your Promo Code",
+    "yourUniquePromoCode": "Your Unique Promo Code",
+    "shareThisCode": "Share this code with friends to earn commissions",
+    "recentReferrals": "Recent Referrals",
+    "viewAll": "View All",
+    "joined": "Joined {{date}}",
+    "active": "ACTIVE",
+    "inactive": "INACTIVE",
+    "noReferralsYet": "No Referrals Yet",
+    "shareYourPromoCode": "Share your promo code to start earning commissions!",
+    "performanceMetrics": "Performance Metrics",
+    "activeReferrals": "Active Referrals",
+    "avgCommission": "Avg Commission",
+    "conversion": "Conversion",
+    "quickActions": "Quick Actions",
+    "payoutHistory": "Payout History",
+    "support": "Support",
+    "requestCashoutModal": {
+      "title": "Request Cashout",
+      "availableForCashout": "Available for Cashout",
+      "amountToCashout": "Amount to Cashout ($)",
+      "enterAmount": "Enter amount",
+      "paymentMethod": "Payment Method",
+      "mobile": "Mobile",
+      "bank": "Bank",
+      "paypal": "PayPal",
+      "crypto": "Crypto",
+      "mobileMoneyDetails": "Mobile Money Details",
+      "enterMobileNumber": "Enter your mobile number",
+      "mobileMoneyHint": "Enter your mobile money number. We'll send payment via {{country}} mobile money.",
+      "paypalEmail": "PayPal Email",
+      "enterPayPalEmail": "Enter your PayPal email",
+      "paypalHint": "Enter the email associated with your PayPal account.",
+      "bankTransferDetails": "Bank Transfer Details",
+      "bankHint": "For bank transfers, our team will contact you within 24 hours to collect your bank details securely.",
+      "cryptoWallet": "Crypto Wallet",
+      "cryptoHint": "For cryptocurrency payments, our team will contact you within 24 hours to collect your wallet address securely.",
+      "cashoutNotes": "Cashouts are processed within 3-5 business days. Minimum cashout: ${{min}}.",
+      "cancel": "Cancel",
+      "submitRequest": "Submit Request",
+      "processing": "Processing..."
+    },
+    "errors": {
+      "minimumNotMet": "Minimum Not Met",
+      "minimumCashout": "Minimum cashout amount is ${{min}}. You need ${{needed}} more.",
+      "validationError": "Validation Error",
+      "enterMobileNumber": "Please enter your mobile number",
+      "enterPayPalEmail": "Please enter your PayPal email",
+      "cashoutRequestSubmitted": "Cashout Request Submitted",
+      "cashoutSuccess": "$${{amount}} cashout request has been submitted. Payment will be processed within 3-5 business days.",
+      "cashoutError": "Failed to process cashout. Please try again.",
+      "failedToLoad": "Failed to load dashboard",
+      "connectionError": "Cannot connect to server. Please check your internet connection.",
+      "timeoutError": "Request timed out. The server might be slow or unavailable.",
+      "sessionExpired": "Your session has expired. Please login again.",
+      "notRegistered": "You are not registered as an affiliate yet."
+    },
+    "stats": {
+      "loading": "Loading affiliate dashboard...",
+      "useDemoData": "Use Demo Data"
+    }
+  },
+  "register": {
+    "title": "Become an Affiliate",
+    "affiliateProgram": "Affiliate Program",
+    "alreadyAffiliate": "You're Already an Affiliate!",
+    "yourPromoCode": "Your Promo Code",
+    "shareCodeHint": "Share this code with friends to earn commissions",
+    "viewDashboard": "View Dashboard",
+    "shareEarn": "Share & Earn",
+    "joinAffiliate": "Join FootGpt Affiliate Program",
+    "joinSubtitle": "Earn commissions by referring friends to FootGpt. Share your unique promo code and start earning today!",
+    "benefitsFeatures": "Benefits & Features",
+    "commissionStructure": "Commission Structure",
+    "yourUniquePromoCode": "Your Unique Promo Code",
+    "promoInstructions": "Create your unique promo code that your friends will use when signing up.",
+    "promoPlaceholder": "Enter your promo code (e.g., FootGpt123)",
+    "generate": "Generate",
+    "promoErrorEmpty": "Please enter a promo code",
+    "promoErrorLength": "Promo code must be at least 4 characters",
+    "promoErrorFormat": "Only uppercase letters and numbers allowed",
+    "promoValidHint": "Promo code looks good! Click \"Become an Affiliate\" to continue.",
+    "promoFormatHint": "Use 4-15 uppercase letters and numbers",
+    "examples": "Examples:",
+    "termsConditions": "Terms & Conditions",
+    "termsText": "By becoming a FootGpt Affiliate, you agree to:",
+    "term1": "Promote FootGpt in an ethical and legal manner",
+    "term2": "Not engage in spam or deceptive marketing practices",
+    "term3": "Receive commissions based on successful referrals",
+    "term4": "Payments are processed monthly via your preferred method",
+    "term5": "Minimum payout threshold: $50",
+    "becomeAffiliateBtn": "Become an Affiliate",
+    "cancel": "Cancel",
+    "validationError": "Validation Error",
+    "registrationFailed": "Registration Failed",
+    "congratulations": "Congratulations! 🎉",
+    "registrationSuccess": "You are now a FootGpt Affiliate!\n\nYou can start sharing your promo code and earning commissions.",
+    "viewDashboardBtn": "View Dashboard",
+    "done": "Done",
+    "authenticationRequired": "Authentication Required",
+    "pleaseLogin": "Please login to become an affiliate.",
+    "loading": "Loading...",
+    "benefits": {
+      "commission": {
+        "title": "10% Commission",
+        "description": "Earn 10% of your referrals' subscription fees"
+      },
+      "tracking": {
+        "title": "Real-time Tracking",
+        "description": "Track your referrals and earnings in real-time"
+      },
+      "dashboard": {
+        "title": "Affiliate Dashboard",
+        "description": "Access to exclusive affiliate dashboard with insights"
+      },
+      "bonus": {
+        "title": "Exclusive Bonuses",
+        "description": "Receive special bonuses for high performance"
+      },
+      "support": {
+        "title": "Priority Support",
+        "description": "Get priority support for affiliate-related queries"
+      },
+      "tools": {
+        "title": "Marketing Tools",
+        "description": "Access to promotional materials and tracking links"
+      }
+    },
+    "commissionTiers": {
+      "basic": {
+        "name": "Basic Tier",
+        "rate": "10%",
+        "label": "on all referrals",
+        "requirement": "0+ referrals"
+      },
+      "premium": {
+        "name": "Premium Tier",
+        "rate": "15%",
+        "label": "on all referrals",
+        "requirement": "10+ referrals"
+      },
+      "elite": {
+        "name": "Elite Tier",
+        "rate": "20%",
+        "label": "on all referrals",
+        "requirement": "50+ referrals"
+      }
+    }
+  },
+  "login": {
+  "welcomeBack": "Welcome Back",
+  "signInToAccount": "Sign in to your FootGpt account",
+  "emailAddress": "Email Address",
+  "enterEmail": "Enter your email",
+  "password": "Password",
+  "enterPassword": "Enter your password",
+  "forgotPassword": "Forgot Password?",
+  "signIn": "Sign In",
+  "or": "OR",
+  "noAccount": "Don't have an account? ",
+  "signUp": "Sign Up",
+  "enterCredentials": "Please enter both email and password",
+  "termsAgreement": "By signing in, you agree to our Terms & Privacy Policy"
+},
+"userRegistration": {
+  "createAccount": "Create Account",
+  "joinForSmarterBetting": "Join FootGpt for smarter betting",
+  "username": "Username *",
+  "chooseUsername": "Choose a username",
+  "emailAddress": "Email Address *",
+  "enterEmail": "Enter your email",
+  "password": "Password *",
+  "atLeast6Chars": "At least 6 characters",
+  "confirmPassword": "Confirm Password *",
+  "confirmYourPassword": "Confirm your password",
+  "referralCode": "Referral Code (Optional)",
+  "enterReferralCode": "Enter referral code if any",
+  "referralCodeHint": "Get bonus credits when you use a referral code",
+  "fillAllFields": "Please fill in all required fields",
+  "passwordsNoMatch": "Passwords do not match",
+  "passwordLength": "Password must be at least 6 characters long",
+  "registrationSuccess": "Registration successful! Welcome to FootGpt.",
+  "termsText": "By creating an account, you agree to our ",
+  "termsOfService": "Terms of Service ",
+  "and": "and ",
+  "privacyPolicy": "Privacy Policy",
+  "alreadyHaveAccount": "Already have an account?",
+  "signIn": "Sign In",
+  "continueAsGuest": "Continue as Guest",
+  "whyJoinFootGpt": "Why Join FootGpt?",
+  "aiPredictions": "AI Predictions",
+  "smartMatchAnalysis": "Smart match analysis",
+  "betslipGenerator": "Betslip Generator",
+  "customAccumulator": "Custom accumulator builder",
+  "freeCredits": "Free Credits",
+  "startWith100Credits": "Start with 100 free credits"
+}
+
+}

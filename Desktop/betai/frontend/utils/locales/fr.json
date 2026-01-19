@@ -1,0 +1,649 @@
+{
+  "common": {
+    "loading": "Chargement...",
+    "error": "Erreur",
+    "success": "Succès",
+    "cancel": "Annuler",
+    "save": "Sauvegarder",
+    "delete": "Supprimer",
+    "confirm": "Confirmer",
+    "back": "Retour",
+    "next": "Suivant",
+    "close": "Fermer",
+    "yes": "Oui",
+    "no": "No",
+    "ok": "OK"
+  },
+  "betslip": {
+    "title": "Générateur de Coupons",
+    "subtitle": "Entrez la cote pour générer des coupons avec L'IA",
+    "targetOdd": "Cible",
+    "targetOddPlaceholder": "ex: 5.00 (max: 10.00)",
+    "oddLimitWarning": "⚠️ La cible ne peut pas dépasser 10.00",
+    "clear": "Effacer",
+    "generate": "Générer",
+    "generating": " En cours...",
+    "generatedBetslips": "Paris Générés",
+    "noBetslipsYet": "Aucun Paris",
+    "noBetslipsDescription": "Entrez une cible et cliquez sur \"Générer\" pour obtenir des suggestions de paris alimentés par IA",
+    "aiAnalyzing": "L'IA analyse les matchs...",
+    "mayTakeTime": "Cela peut prendre 10 à 20 secondes",
+    "loginRequired": "Connexion Requise",
+    "loginToGenerate": "Connectez-vous pour générer des paris alimentés par IA",
+    "needCredits": "Besoin de Plus de Crédits",
+    "creditsNeeded": "Vous avez besoin de {{credits}} crédit{{plural}} pour générer des paris alimentés par IA.",
+    "youHaveCredits": "Il vous reste {{count}} crédit{{plural}}.",
+    "goToLogin": "Aller à la Connexion",
+    "getCredits": "Obtenir des Crédits",
+    "loginToSave": "Connectez-vous pour sauvegarder",
+    "authStatus": {
+      "loginToGenerate": "Connectez-vous pour générer",
+      "adminUnlimited": "Admin (Illimité)",
+      "proUnlimited": "Pro (Illimité)",
+      "credits": "Crédits: {{count}}",
+      "needCredits": "Crédits: {{count}} (Besoin {{required}})"
+    },
+    "tips": {
+      "title": "💡 Conseils:",
+      "targetOdds": "• Essayez des cibles entre 2.00 et 10.00",
+      "maxOdd": "• Cible maximale autorisée: 10.00",
+      "aiConfidence": "• Chaque pari montre un score de confiance IA",
+      "successRate": "• Taux de réussite basé sur la confiance et les sélections",
+      "proSubscription": "✅ Abonnement Pro: Générations illimitées",
+      "creditsNeeded": "Crédits nécessaires: {{credits}} par génération",
+      "loginToGenerate": "Connectez-vous pour générer des paris"
+    },
+    "connectionError": {
+      "title": "Erreur de Connexion",
+      "message": "Impossible de se connecter au serveur. Veuillez vérifier:\\n\\n1. Votre backend est en cours d'exécution (node server.js)\\n2. Le serveur est sur {{ip}}\\n3. Aucun pare-feu ne bloque la connexion"
+    },
+    "errors": {
+      "invalidInput": "Entrée Invalide",
+      "invalidOdd": "Veuillez entrer une cible valide (minimum 1.10)",
+      "oddTooHigh": "La cible ne peut pas dépasser 10.00",
+      "generationFailed": "Échec de Génération",
+      "generationError": "Échec de génération des paris",
+      "noBetslips": "Aucun Paris Généré",
+      "noBetslipsMessage": "Aucun pari n'a pu être généré avec les matchs actuels et la cible."
+    },
+    "betslipCard": {
+      "betslip": "Paris",
+      "totalOdds": "Cotes Totales",
+      "potentialWin": "Gain Potentiel",
+      "aiConfidence": "Confiance IA",
+      "successRate": "Taux de Réussite",
+      "stake": "Mise",
+      "selections": "sélections",
+      "selection": "sélection",
+      "useThisBetslip": "Utiliser ce Paris",
+      "saveToProfile": "Sauvegarder",
+      "saved": "Sauvegardé!",
+      "loginToSave": "Connexion pour Sauvegarder"
+    },
+    "selections": {
+      "league": "Ligue",
+      "prediction": "Prédiction",
+      "odd": "Cote",
+      "confidence": "Confiance",
+      "matchTime": "Heure du Match",
+      "status": "Statut",
+      "aiGenerated": "🤖 Généré par IA",
+      "manual": "📝 Manuel",
+      "upcoming": "À VENIR",
+      "live": "EN DIRECT",
+      "finished": "TERMINÉ"
+    },
+     "card": {
+      "title": "Paris IA #{id}",
+      "match": "match",
+      "matches": "matchs",
+      "prediction": "Prédiction",
+      "odd": "Cote",
+      "ai": "IA",
+      "totalOdd": "Cote Totale",
+      "aiConfidence": "Confiance IA",
+      "successRate": "Taux de Réussite",
+      "stake": "Mise",
+      "potentialReturn": "Gain Potentiel",
+      "viewDetails": "Voir Détails",
+      "hideDetails": "Masquer Détails",
+      "showLess": "Afficher Moins",
+      "showMore": "+{{count}} matchs supplémentaires",
+      "saveToProfile": "Sauvegarder",
+      "savedSuccess": "Paris sauvegardé dans votre profil.",
+      "saveError": "Échec de sauvegarde du pari. Veuillez réessayer.",
+      "noPrediction": "Aucune prédiction",
+      "predictions": {
+        "over": "Plus de {value}",
+        "under": "Moins de {value}",
+        "btts": "BTTS {value}",
+        "homeWin": "Victoire Domicile",
+        "awayWin": "Victoire Extérieur",
+        "draw": "Match Nul",
+        "oneXTwo": "1X2: {value}",
+        "doubleChance": "Double Chance: {value}"
+      }
+    }
+  },
+  "paywall": {
+    "loading": "Chargement du paywall...",
+    "authRequired": {
+      "title": "Authentification Requise",
+      "message": "Veuillez vous connecter pour accéder aux fonctionnalités premium.",
+      "viewMessage": "Veuillez vous connecter pour accéder aux fonctionnalités premium",
+      "login": "Connexion",
+      "loginNow": "Se Connecter"
+    },
+    "header": {
+      "title": "Passer à Premium",
+      "subtitle": "Débloquez les prédictions alimentées par IA et les fonctionnalités exclusives",
+      "coins": "{{count}} pièces"
+    },
+    "countrySelector": {
+      "label": "Pays de Paiement",
+      "select": "Sélectionner un Pays",
+      "currency": "Devise : {{currency}}"
+    },
+    "countrySelection": {
+      "title": "Sélectionnez Votre Pays",
+      "subtitle": "Choisissez votre pays pour le traitement du paiement",
+      "footer": "La passerelle de paiement sera automatiquement sélectionnée en fonction de votre pays"
+    },
+    "promoInfo": {
+      "registeredWith": "Vous vous êtes inscrit avec le code promo :",
+      "discountAvailable": "10% DE RÉDUCTION Disponible"
+    },
+    "promoBanner": {
+      "title": "Réduction Code Promo !",
+      "subtitle": "Vous obtenez 10% de réduction sur votre premier abonnement"
+    },
+    "tabs": {
+      "coins": "Forfaits de Pièces",
+      "subscriptions": "Abonnements"
+    },
+    "plansSection": {
+      "coinsTitle": "Choisissez Votre Forfait de Pièces",
+      "subscriptionsTitle": "Forfaits Accès Illimité"
+    },
+    "planActions": {
+      "selected": "Sélectionné",
+      "selectPlan": "Sélectionner le Forfait"
+    },
+    "discountBadge": "{{percentage}}% DE RÉDUCTION",
+    "saveBadge": "Économisez {{percentage}}%",
+    "validFor": "Valable pour {{duration}}",
+    "discountIndicator": "{{percentage}}% DE RÉDUCTION",
+    "tags": {
+      "popular": "POPULAIRE",
+      "bestValue": "Populair",
+      "unlimited": "ILLIMITÉ",
+      "premium": "PREMIUM"
+    },
+    "planDetails": {
+      "coins": "pièces",
+      "coins_500": {
+        "name": "500 Pièces",
+        "duration": "24 heures",
+        "utilization": "Accès 24 heures",
+        "features": [
+          "Accès illimité aux prédictions de la page d'accueil pendant 24h",
+          "Meilleurs résultats pour vos événements préférés",
+          "Prédictions basées sur l'IA",
+          "Générez plusieurs coupons"
+        ]
+      },
+      "coins_1200": {
+        "name": "1200 Pièces",
+        "duration": "3 jours",
+        "utilization": "Accès 3 jours",
+        "features": [
+          "Accès illimité aux prédictions de la page d'accueil pendant 3 jours",
+          "Meilleurs résultats pour vos événements préférés",
+          "Prédictions basées sur l'IA",
+          "Générez plus de coupons"
+        ]
+      },
+      "weekly_unlimited": {
+        "name": "Hebdomadaire Illimité",
+        "duration": "7 jours",
+        "utilization": "Illimité",
+        "features": [
+          "Accès illimité aux prédictions de la page d'accueil",
+          "Meilleurs résultats pour vos événements préférés",
+          "Prédictions basées sur l'IA",
+          "Accès illimité à l'IA entraînée pendant 7 jours",
+          "Support prioritaire"
+        ]
+      },
+      "monthly_unlimited": {
+        "name": "Mensuel Illimité",
+        "duration": "30 jours",
+        "utilization": "Illimité",
+        "features": [
+          "Accès illimité aux prédictions de la page d'accueil",
+          "Meilleurs résultats pour vos événements préférés",
+          "Prédictions basées sur l'IA",
+          "Accès illimité à l'IA entraînée",
+          "Support prioritaire",
+          "Analyses avancées",
+          "Fonctionnalités exclusives"
+        ]
+      }
+    },
+    "confirmPurchase": {
+      "title": "Confirmer l'Achat",
+      "message1": "Vous êtes sur le point d'acheter :\n\n{{planName}}\nPrix : {{price}}\nDurée : {{duration}}\n\n",
+      "promoDiscount": "🎉 Vous obtenez 10% de réduction avec votre code promo !\n\n",
+      "message2": "Pays sélectionné : {{countryName}} ({{countryCode}})\nLa passerelle de paiement sera automatiquement sélectionnée en fonction de votre pays.",
+      "proceed": "Procéder au Paiement"
+    },
+    "payment": {
+      "gateways": {
+        "fapshi": "Fapshi",
+        "lygos": "Lygos"
+      },
+      "redirecting": {
+        "title": "Redirection vers le Paiement",
+        "message": "Vous allez maintenant être redirigé vers {{gateway}} pour finaliser votre paiement."
+      },
+      "errors": {
+        "createFailed": "Échec de création du paiement",
+        "linkError": {
+          "title": "Erreur de Lien de Paiement",
+          "message": "Impossible d'ouvrir le lien de paiement. Veuillez réessayer."
+        },
+        "failed": {
+          "title": "Échec du Paiement",
+          "message": "Une erreur s'est produite lors du traitement de votre paiement. Veuillez réessayer."
+        },
+        "timeout": {
+          "title": "Délai de Paiement Dépassé",
+          "message": "Le paiement prend plus de temps que prévu. Veuillez vérifier votre email ou contacter le support."
+        }
+      },
+      "success": {
+        "title": "Paiement Réussi ! 🎉",
+        "message": "Vous avez acheté avec succès {{planName}} !\n\n{{coins}}{{duration}}\n\n{{promoApplied}}",
+        "promoApplied": "Votre réduction de 10% avec le code promo a été appliquée !",
+        "continue": "Continuer",
+        "refreshMessage": "Le paiement a réussi ! Veuillez actualiser l'application pour voir votre abonnement mis à jour."
+      }
+    },
+    "paymentStatus": {
+      "pending": {
+        "title": "Paiement en Cours",
+        "message": "Veuillez compléter le paiement dans la fenêtre du navigateur ouverte. Nous vous notifierons lorsqu'il sera terminé."
+      },
+      "success": {
+        "title": "Paiement Réussi",
+        "message": "Votre abonnement a été activé avec succès !"
+      },
+      "failed": {
+        "title": "Échec du Paiement",
+        "message": "Un problème est survenu avec votre paiement. Veuillez réessayer."
+      },
+      "transaction": "Transaction : {{id}}"
+    },
+    "featuresSection": {
+      "title": "Fonctionnalités Premium"
+    },
+    "features": {
+      "aiPredictions": {
+        "title": "Prédictions IA",
+        "description": "Intelligence artificielle avancée pour des prédictions de match précises"
+      },
+      "highAccuracy": {
+        "title": "Haute Précision",
+        "description": "Taux de réussite prouvés avec des analyses basées sur les données"
+      },
+      "unlimitedAccess": {
+        "title": "Accès Illimité",
+        "description": "Générez autant de coupons que vous le souhaitez"
+      },
+      "safeSecure": {
+        "title": "Sécurisé",
+        "description": "Paiements cryptés et protection des données"
+      }
+    },
+    "paymentInfo": {
+      "securePayment": {
+        "title": "Paiement Sécurisé",
+        "description": "Tous les paiements sont traités de manière sécurisée par nos partenaires de paiement. Vos informations de paiement sont cryptées et jamais stockées."
+      },
+      "easyCancellation": {
+        "title": "Annulation Facile",
+        "description": "Annulez votre abonnement à tout moment. Sans questions."
+      }
+    },
+    "faqSection": {
+      "title": "Questions Fréquemment Posées",
+      "questions": [
+        "Comment fonctionnent les pièces ?",
+        "Puis-je annuler mon abonnement ?",
+        "Quels modes de paiement sont acceptés ?",
+        "Comment obtenir de l'aide ?"
+      ]
+    },
+    "footer": {
+      "agreement": "En continuant, vous acceptez nos Conditions d'Utilisation et notre Politique de Confidentialité.",
+      "copyright": "© 2025 FootGpt. Tous droits réservés."
+    }
+  },
+  "profile": {
+    "profile": "Profil",
+    "success": "Succès",
+    "accuracy": "Précision",
+    "totalBetslips": "Coupons",
+    "subscription": "Abonnement",
+    "credits": "Crédits",
+    "createNewBetslip": "Créer un Nouveau Paris",
+    "generateAiPowered": "Générer des paris alimentés par IA",
+    "savedBetslips": "Paris Enregistrés",
+    "seeAll": "Voir Tout",
+    "noSavedBetslips": "Aucun Paris Enregistré",
+    "createFirstOne": "Vos paris enregistrés apparaîtront ici. Créez votre premier !",
+    "createBetslip": "Créer un Paris",
+    "account": "Compte",
+    "language": "Langue",
+    "buyCoins": "Acheter des Pièces",
+    "getCoins": "OBTENIR",
+    "becomeAffiliate": "Devenir Affilié",
+    "affiliateProgram": "Programme d'Affiliation",
+    "active": "ACTIF",
+    "earn": "GAGNER",
+    "notifications": "Notifications",
+    "supportLegal": "Support & Légal",
+    "helpSupport": "Aide & Support",
+    "termsConditions": "Conditions d'Utilisation",
+    "privacyPolicy": "Politique de Confidentialité",
+    "aboutBetai": "À propos de BetAI",
+    "logout": "Déconnexion",
+    "logoutConfirm": "Êtes-vous sûr de vouloir vous déconnecter ?",
+    "logoutBtn": "Déconnexion",
+    "authenticationRequired": "Authentification Requise",
+    "pleaseLogin": "Veuillez vous connecter pour accéder à votre profil.",
+    "loginNow": "Se Connecter",
+    "loadingProfile": "Chargement du profil...",
+    "pleaseLoginView": "Veuillez vous connecter pour voir votre profil",
+    "version": "Assistant BetAI v1.0.0",
+    "copyright": "© 2024 BetAI. Tous droits réservés.",
+    "noSavedBetslipsAlert": "Aucun Paris Enregistré",
+    "noSavedBetslipsMessage": "Vous n'avez enregistré aucun pari pour l'instant.",
+    "removeBetslip": "Supprimer le Paris",
+    "removeBetslipConfirm": "Êtes-vous sûr de vouloir supprimer ce pari ?",
+    "remove": "Supprimer",
+    "successRemoved": "Succès",
+    "betslipRemoved": "Pari supprimé !",
+    "comingSoon": "Bientôt Disponible",
+    "willBeAvailable": "sera bientôt disponible !",
+    "languageChanged": "Langue Modifiée",
+    "languageSetTo": "Langue définie sur",
+    "aiConfidence": "Confiance IA",
+    "successRate": "Taux de Réussite",
+    "stake": "Mise",
+    "potentialReturn": "Gain Potentiel",
+    "selectionsInBetslip": "Sélections dans ce pari :",
+    "prediction": "Prédiction :",
+    "deleteThisBetslip": "Supprimer ce Paris",
+    "matches": "matchs",
+    "match": "match",
+    "league": "Ligue",
+    "status": "Statut",
+    "aiGenerated": "🤖 Généré par IA",
+    "manual": "📝 Manuel",
+    "totalOdds": "Cotes Totales",
+    "recently": "Récemment",
+    "home": "Domicile",
+    "away": "Extérieur",
+    "unknownLeague": "Ligue Inconnue",
+    "noPrediction": "Aucune prédiction",
+    "none": "Aucun",
+    "daily": "Jour",
+    "weekly": "Hebdomadaire",
+    "monthly": "Mensuel",
+    "pro": "Pro"
+  },
+  "faqSection": {
+  "title": "Questions Fréquemment Posées",
+  "questions": [
+    "Comment fonctionnent les pièces ?",
+    "Puis-je annuler mon abonnement ?",
+    "Quels modes de paiement sont acceptés ?",
+    "Comment obtenir de l'aide ?"
+  ],
+  "answers": {
+    "0": "Les pièces sont notre monnaie virtuelle utilisée pour générer des coupons alimentés par IA. Chaque génération de coupon coûte 100 pièces. Lorsque vous achetez des forfaits de pièces, vous obtenez un nombre spécifique de pièces pouvant être utilisées pour générer des prédictions.",
+    "1": "Oui ! Vous pouvez annuler votre abonnement à tout moment. Pour les abonnements, allez simplement dans les paramètres de votre profil et sélectionnez 'Annuler l'abonnement'. Votre accès continuera jusqu'à la fin de votre période de facturation actuelle. Pas de frais cachés ni de questions.",
+    "2": "Nous acceptons différents modes de paiement selon votre pays. Pour les pays africains, nous prenons en charge le mobile money (MTN, Orange, Airtel), les virements bancaires et les cartes de crédit/débit. Les méthodes spécifiques disponibles seront affichées lors du paiement en fonction de votre pays sélectionné.",
+    "3": "Pour toute question ou besoin d'assistance, veuillez nous contacter à freecoder21@gmail.com. Notre équipe d'assistance est disponible 24h/24 et 7j/7 pour vous aider avec les problèmes de paiement, les problèmes techniques ou toute autre demande que vous pourriez avoir."
+  }
+},
+  
+  "affiliate": {
+    "dashboard": "Tableau de Bord d'Affiliation",
+    "notAnAffiliate": "Pas un Affilié",
+    "notAffiliateText": "Vous devez rejoindre le programme d'affiliation pour accéder à ce tableau de bord.",
+    "becomeAnAffiliate": "Devenir un Affilié",
+    "tier": "NIVEAU",
+    "basic": "BASIQUE",
+    "premium": "PREMIUM",
+    "elite": "ÉLITE",
+    "commissionRate": "Taux de Commission: {{rate}}",
+    "earnings": "Gains",
+    "today": "Aujourd'hui",
+    "week": "Cette Semaine",
+    "month": "Ce Mois",
+    "total": "Total",
+    "todayEarnings": "Gains d'Aujourd'hui",
+    "thisWeekEarnings": "Gains de la Semaine",
+    "thisMonthEarnings": "Gains du Mois",
+    "totalEarnings": "Gains Totaux",
+    "totalReferrals": "Références Totales",
+    "conversionRate": "Taux de Conversion",
+    "availableForPayout": "Disponible pour Paiement",
+    "lifetimeCommissionEarned": "Commission à vie gagnée",
+    "min": "Min: {{amount}}",
+    "requestCashout": "Demander un Retrait",
+    "nextPayoutDate": "Date du prochain paiement: {{date}}",
+    "notScheduled": "Non programmé",
+    "yourPromoCode": "Votre Code Promo",
+    "yourUniquePromoCode": "Votre Code Promo Unique",
+    "shareThisCode": "Partagez ce code avec des amis pour gagner des commissions",
+    "recentReferrals": "Références Récentes",
+    "viewAll": "Voir Tout",
+    "joined": "Rejoint le {{date}}",
+    "active": "ACTIF",
+    "inactive": "INACTIF",
+    "noReferralsYet": "Aucune Référence Encore",
+    "shareYourPromoCode": "Partagez votre code promo pour commencer à gagner des commissions!",
+    "performanceMetrics": "Métriques de Performance",
+    "activeReferrals": "Références Actives",
+    "avgCommission": "Commission Moyenne",
+    "conversion": "Conversion",
+    "quickActions": "Actions Rapides",
+    "payoutHistory": "Historique des Paiements",
+    "support": "Support",
+    "requestCashoutModal": {
+      "title": "Demander un Retrait",
+      "availableForCashout": "Disponible pour Retrait",
+      "amountToCashout": "Montant à Retirer ($)",
+      "enterAmount": "Entrez le montant",
+      "paymentMethod": "Méthode de Paiement",
+      "mobile": "Mobile",
+      "bank": "Banque",
+      "paypal": "PayPal",
+      "crypto": "Crypto",
+      "mobileMoneyDetails": "Détails du Mobile Money",
+      "enterMobileNumber": "Entrez votre numéro de mobile",
+      "mobileMoneyHint": "Entrez votre numéro de mobile money. Nous enverrons le paiement via le mobile money {{country}}.",
+      "paypalEmail": "Email PayPal",
+      "enterPayPalEmail": "Entrez votre email PayPal",
+      "paypalHint": "Entrez l'email associé à votre compte PayPal.",
+      "bankTransferDetails": "Détails de Virement Bancaire",
+      "bankHint": "Pour les virements bancaires, notre équipe vous contactera dans les 24 heures pour collecter vos coordonnées bancaires de manière sécurisée.",
+      "cryptoWallet": "Portefeuille Crypto",
+      "cryptoHint": "Pour les paiements en cryptomonnaie, notre équipe vous contactera dans les 24 heures pour collecter votre adresse de portefeuille de manière sécurisée.",
+      "cashoutNotes": "Les retraits sont traités dans les 3-5 jours ouvrables. Retrait minimum: ${{min}}.",
+      "cancel": "Annuler",
+      "submitRequest": "Demande",
+      "processing": "Traitement..."
+    },
+    "errors": {
+      "minimumNotMet": "Minimum Non Atteint",
+      "minimumCashout": "Le montant minimum de retrait est de ${{min}}. Il vous manque ${{needed}} de plus.",
+      "validationError": "Erreur de Validation",
+      "enterMobileNumber": "Veuillez entrer votre numéro de mobile",
+      "enterPayPalEmail": "Veuillez entrer votre email PayPal",
+      "cashoutRequestSubmitted": "Demande de Retrait Soumise",
+      "cashoutSuccess": "La demande de retrait de ${{amount}} a été soumise. Le paiement sera traité dans les 3-5 jours ouvrables.",
+      "cashoutError": "Échec du retrait. Veuillez réessayer.",
+      "failedToLoad": "Échec du chargement du tableau de bord",
+      "connectionError": "Impossible de se connecter au serveur. Veuillez vérifier votre connexion Internet.",
+      "timeoutError": "Requête expirée. Le serveur peut être lent ou indisponible.",
+      "sessionExpired": "Votre session a expiré. Veuillez vous reconnecter.",
+      "notRegistered": "Vous n'êtes pas encore inscrit en tant qu'affilié."
+    },
+    "stats": {
+      "loading": "Chargement du tableau de bord d'affiliation...",
+      "useDemoData": "Utiliser les Données de Démo"
+    },
+  "register": {
+    "title": "Devenir un Affilié",
+    "affiliateProgram": "Programme d'Affiliation",
+    "alreadyAffiliate": "Vous êtes Déjà un Affilié!",
+    "yourPromoCode": "Votre Code Promo",
+    "shareCodeHint": "Partagez ce code avec des amis pour gagner des commissions",
+    "viewDashboard": "Voir le Tableau de Bord",
+    "shareEarn": "Partager et Gagner",
+    "joinAffiliate": "Rejoignez le Programme d'Affiliation FootGpt",
+    "joinSubtitle": "Gagnez des commissions en référant des amis à FootGpt. Partagez votre code promo unique et commencez à gagner dès aujourd'hui!",
+    "benefitsFeatures": "Avantages & Fonctionnalités",
+    "commissionStructure": "Structure des Commissions",
+    "yourUniquePromoCode": "Votre Code Promo Unique",
+    "promoInstructions": "Créez votre code promo unique que vos amis utiliseront lors de leur inscription.",
+    "promoPlaceholder": "Entrez votre code promo (ex: FootGpt123)",
+    "generate": "Générer",
+    "promoErrorEmpty": "Veuillez entrer un code promo",
+    "promoErrorLength": "Le code promo doit contenir au moins 4 caractères",
+    "promoErrorFormat": "Seules les lettres majuscules et les chiffres sont autorisés",
+    "promoValidHint": "Le code promo semble bon! Cliquez sur \"Devenir un Affilié\" pour continuer.",
+    "promoFormatHint": "Utilisez 4 à 15 lettres majuscules et chiffres",
+    "examples": "Exemples:",
+    "termsConditions": "Conditions Générales",
+    "termsText": "En devenant un affilié FootGpt, vous acceptez de:",
+    "term1": "Promouvoir FootGpt de manière éthique et légale",
+    "term2": "Ne pas vous engager dans le spam ou des pratiques de marketing trompeuses",
+    "term3": "Recevoir des commissions basées sur des références réussies",
+    "term4": "Les paiements sont traités mensuellement via votre méthode préférée",
+    "term5": "Seuil de paiement minimum: 50$",
+    "becomeAffiliateBtn": "Devenir un Affilié",
+    "cancel": "Annuler",
+    "validationError": "Erreur de Validation",
+    "registrationFailed": "Échec de l'Inscription",
+    "congratulations": "Félicitations! 🎉",
+    "registrationSuccess": "Vous êtes maintenant un affilié FootGpt!\n\nVous pouvez commencer à partager votre code promo et gagner des commissions.",
+    "viewDashboardBtn": "Voir le Tableau de Bord",
+    "done": "Terminé",
+    "authenticationRequired": "Authentification Requise",
+    "pleaseLogin": "Veuillez vous connecter pour devenir un affilié.",
+    "loading": "Chargement...",
+    "benefits": {
+      "commission": {
+        "title": "Commission 10%",
+        "description": "Gagnez 10% des frais d'abonnement de vos références"
+      },
+      "tracking": {
+        "title": "Suivi en Temps Réel",
+        "description": "Suivez vos références et gains en temps réel"
+      },
+      "dashboard": {
+        "title": "Tableau de Bord Affilié",
+        "description": "Accès à un tableau de bord affilié exclusif avec insights"
+      },
+      "bonus": {
+        "title": "Bonus Exclusifs",
+        "description": "Recevez des bonus spéciaux pour haute performance"
+      },
+      "support": {
+        "title": "Support Prioritaire",
+        "description": "Obtenez un support prioritaire pour les questions d'affiliation"
+      },
+      "tools": {
+        "title": "Outils Marketing",
+        "description": "Accès aux matériels promotionnels et liens de suivi"
+      }
+    },
+    "commissionTiers": {
+      "basic": {
+        "name": "Niveau Basique",
+        "rate": "10%",
+        "label": "sur toutes les références",
+        "requirement": "0+ références"
+      },
+      "premium": {
+        "name": "Niveau Premium",
+        "rate": "15%",
+        "label": "sur toutes les références",
+        "requirement": "10+ références"
+      },
+      "elite": {
+        "name": "Niveau Élite",
+        "rate": "20%",
+        "label": "sur toutes les références",
+        "requirement": "50+ références"
+      }
+    }
+  }
+
+  },
+  "login": {
+  "welcomeBack": "Bienvenue",
+  "signInToAccount": "Connectez-vous à votre compte FootGpt",
+  "emailAddress": "Adresse Email",
+  "enterEmail": "Entrez votre email",
+  "password": "Mot de Passe",
+  "enterPassword": "Entrez votre mot de passe",
+  "forgotPassword": "Mot de passe oublié ?",
+  "signIn": "Se Connecter",
+  "or": "OU",
+  "noAccount": "Vous n'avez pas de compte ? ",
+  "signUp": "S'inscrire",
+  "enterCredentials": "Veuillez saisir votre email et mot de passe",
+  "termsAgreement": "En vous connectant, vous acceptez nos Conditions et Politique de Confidentialité"
+},
+"userRegistration": {
+  "createAccount": "Créer un Compte",
+  "joinForSmarterBetting": "Rejoignez FootGpt pour des paris plus intelligents",
+  "username": "Nom d'utilisateur *",
+  "chooseUsername": "Choisissez un nom d'utilisateur",
+  "emailAddress": "Adresse Email *",
+  "enterEmail": "Entrez votre email",
+  "password": "Mot de Passe *",
+  "atLeast6Chars": "Au moins 6 caractères",
+  "confirmPassword": "Confirmer le Mot de Passe *",
+  "confirmYourPassword": "Confirmez votre mot de passe",
+  "referralCode": "Code de Parrainage (Optionnel)",
+  "enterReferralCode": "Entrez le code de parrainage si vous en avez",
+  "referralCodeHint": "Obtenez des crédits bonus en utilisant un code de parrainage",
+  "fillAllFields": "Veuillez remplir tous les champs obligatoires",
+  "passwordsNoMatch": "Les mots de passe ne correspondent pas",
+  "passwordLength": "Le mot de passe doit contenir au moins 6 caractères",
+  "registrationSuccess": "Inscription réussie ! Bienvenue sur FootGpt.",
+  "termsText": "En créant un compte, vous acceptez nos ",
+  "termsOfService": "Conditions d'Utilisation ",
+  "and": "et ",
+  "privacyPolicy": "Politique de Confidentialité",
+  "alreadyHaveAccount": "Vous avez déjà un compte ?",
+  "signIn": "Se Connecter",
+  "continueAsGuest": "Continuer en tant qu'invité",
+  "whyJoinFootGpt": "Pourquoi Rejoindre FootGpt ?",
+  "aiPredictions": "Prédictions IA",
+  "smartMatchAnalysis": "Analyse intelligente des matchs",
+  "betslipGenerator": "Générateur de Paris",
+  "customAccumulator": "Constructeur d'accumulateur personnalisé",
+  "freeCredits": "Crédits Gratuits",
+  "startWith100Credits": "Commencez avec 100 crédits gratuits"
+}
+
+  
+}
